@@ -1,0 +1,53 @@
+.g-steps {
+  display: flex;
+  margin-top: 30px;
+  > div:last-child {
+    .steps-header {
+      > div:first-child {
+        display: none;
+      }
+    }
+  }
+  .steps-active,
+  .steps-not-active {
+    width: 200px;
+    word-break: break-all;
+    margin-right: 10px;
+    text-align: center;
+    .steps-header {
+      position: relative;
+      margin-bottom: 10px;
+    }
+    .steps-active-line,
+    .steps-not-active-line {
+      margin-left: 7px;
+      position: absolute;
+      top: 50%;
+      left: 57%;
+      transform: translateY(-50%);
+      width: 85%;
+    }
+    .steps-active-line {
+      border-top: 1px solid $green;
+    }
+    .steps-not-active-line {
+      width: 85%;
+      height: 1px;
+      background-image: linear-gradient(to right, $blue 0%, $blue 50%, transparent 50%);
+      background-size: 16px 1px;
+      background-repeat: repeat-x;
+    }
+    .steps-radius {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      margin: 0 auto;
+      background-color: $blue;
+    }
+  }
+  .steps-active {
+    .steps-radius {
+      background-color: $green;
+    }
+  }
+}

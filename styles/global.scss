@@ -1,0 +1,39 @@
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #eeeeee;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+html::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+html::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: #eeeeee;
+}
+
+html::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+  .left-list {
+    display: none;
+  }
+}
+$skyblue: #409eff;
+$blueBg: #ecf5ff;
+$blue: #1f68d1;
+$green: #14b960;
+$orange: orange;
+$text-color: #606266;
